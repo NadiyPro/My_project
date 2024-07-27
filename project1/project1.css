@@ -7,8 +7,37 @@
 
 }
 .raleway{
-              font-family: "Raleway", sans-serif;
-              font-optical-sizing: auto;
-              /*font-weight: <weight>;*/
-              font-style: normal;
-          }
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /*font-weight: 900;*/
+}
+body{
+    background-color: #010101;
+    color: white;
+    font-family: raleway, sans-serif;
+    line-height: 1.55;
+}
+.container_main{
+    position: relative;
+}
+.layers{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.layers_basic1,.layers_middle,.layers_front{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+.layers_basic1{
+    transform: translate3d( 0, calc(var(--scrollTop) / 2), 0)
+}
+.main_article{
+    min-height: 100vh;
+}
