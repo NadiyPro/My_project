@@ -36,12 +36,16 @@ body{
     position: absolute;
     background-size: cover;
     background-position: center;
+    will-change: transform;
 }
 .layers_basic1{
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
 }
 .layers_middle{
     transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers_front{
+    transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
 .main_article{
     min-height: 100vh;
