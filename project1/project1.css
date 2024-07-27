@@ -36,7 +36,7 @@ body{
     background-position: center;
 }
 .layers_basic1{
-    transform: translate3d( 0, calc(var(--scrollTop) / 2), 0)
+    transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 }
 .main_article{
     min-height: 100vh;
