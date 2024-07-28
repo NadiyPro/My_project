@@ -14,12 +14,23 @@
 }
 body{
     background-color: #010101;
-    color: white;
     font-family: raleway, sans-serif;
     line-height: 1.55;
 }
 .container_main{
     position: relative;
+}
+.container_main::after{
+    content: "";
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: calc(var(--index) * 10);
+    background-image: url(img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: calc(var(--index) * -4.5);
 }
 .layers{
     height: 100vh;
