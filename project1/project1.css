@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-
+    --index: calc(1vw + 1vh);
 }
 .raleway{
     font-family: "Raleway", sans-serif;
@@ -29,6 +29,7 @@ body{
     text-align: center;
     overflow: hidden;
     position: relative;
+
 }
 .layers_basic1,.layers_middle,.layers_front{
     height: 100%;
@@ -40,12 +41,30 @@ body{
 }
 .layers_basic1{
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+    z-index: 0;
 }
 .layers_middle{
     transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    z-index: 2;
 }
 .layers_front{
     transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    z-index: 2;
+}
+.layers-text{
+    z-index: 1;
+    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.layers_title{
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2.25);
+}
+.layers_caption{
+    font-size: calc(var(--index) / 1.175);
+    letter-spacing: calc(var(--index) / 3.5);
 }
 .main_article{
     min-height: 100vh;
