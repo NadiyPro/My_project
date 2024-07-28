@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ html{
 :root{
     --index: calc(1vw + 1vh);
     --text: #d7ce7a;
+    --transition: transform 0.75s cubic-bezier(0.075, 0.500, 0.000, 1.000)
 }
 .raleway{
     font-family: "Raleway", sans-serif;
@@ -53,6 +55,7 @@ body{
     background-size: cover;
     background-position: center;
     will-change: transform;
+    transition: var(--transition);
 }
 .layers_basic1{
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
