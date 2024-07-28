@@ -10,7 +10,7 @@ html{
 :root{
     --index: calc(1vw + 1vh);
     --text: #d7ce7a;
-    --transition: transform 0.75s cubic-bezier(0.075, 0.500, 0.000, 1.000)
+    --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1)
 }
 .raleway{
     font-family: "Raleway", sans-serif;
@@ -77,6 +77,7 @@ body{
     font-weight: 900;
     color: var(--text);
     text-shadow: 0 0 15px #8D6D29;
+    transition: var(--transition);
 }
 .layers_title{
     font-size: calc(var(--index) * 2.5);
@@ -105,6 +106,7 @@ body{
     letter-spacing: calc(var(--index) / 7.5);
     transform: var(--article_transform);
     will-change: transform;
+    transition: var(--transition);
 }
 .article_p{
     max-width: calc(var(--index) * 30);
@@ -112,7 +114,7 @@ body{
     margin-top: calc(var(--index) / 1.25);
     transform: var(--article_transform);
     will-change: transform;
-
+    transition: var(--transition);
 }
 .copy{
     position: absolute;
