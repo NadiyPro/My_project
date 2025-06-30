@@ -8,8 +8,10 @@ html{
 }
 :root{
     --index: calc(1vw + 1vh);
+    /* обчислює значення, яке складається з: 1vw — 1% від ширини вікна. 1vh — 1% від висоти вікна*/
     --text: #d7ce7a;
     --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1)
+    /* Плавна анімація transform з кастомною швидкістю */
 }
 .raleway{
     font-family: "Raleway", sans-serif;
