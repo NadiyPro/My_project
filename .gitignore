@@ -73,3 +73,5 @@ fabric.properties
 /.idea/.gitignore
 /.idea/*.*
 /My_project.iml
+
+/node_modules
